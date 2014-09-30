@@ -1,7 +1,7 @@
-Meu blog pessoal
-================
+Blog devfuria
+=============
 
 
-[flaviomicheletti.github.io](https://flaviomicheletti.github.io/)
+[www.devfuria.com.br/blog](http://www.devfuria.com.br/blog/)
 
 Utilizando [jekyll](http://jekyllrb.com/)

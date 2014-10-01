@@ -6,10 +6,12 @@
    <meta name="author" content="Flávio Alexandre Micheletti" />
 
    <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+   <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css" />
+
+
 
    <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css" type="text/css" media="screen, projection" />
 
 </head>
 <body>
@@ -17,7 +19,7 @@
 
 <div class="site">
   <div class="title">
-    <a href="/">Blog DevFuria</a>
+    <a href="{{ site.baseurl }}/">Blog DevFuria</a>
   </div>
   
   {{ content }}

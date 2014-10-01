@@ -5,7 +5,7 @@ title:  Jekyll, uma limitação irritante!
 
 
 [Jekyll](http://jekyllrb.com/) é sensacional! Não vou falar mal de Jekyll, afinal de contas este blog é feito com Jekyll.
-O meu site [www.devfuria.com.br](www.devfuria.com.br) é Jekyll, o meu [blog pessoal](https://flaviomicheletti.github.io/)
+O meu site [www.devfuria.com.br](http://www.devfuria.com.br/) é Jekyll, o meu [blog pessoal](https://flaviomicheletti.github.io/)
 é feito com Jekyll. Eu seria o cara mais suspeito para falar mal de Jekyll, mas eu encontrei uma limitação e venho 
 compartilhar ela com você.
 

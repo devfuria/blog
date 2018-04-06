@@ -5,19 +5,19 @@ title:  Jekyll, uma limitação irritante!
 
 
 [Jekyll](http://jekyllrb.com/) é sensacional! Não vou falar mal de Jekyll, afinal de contas este blog é feito com Jekyll.
-O meu site [www.devfuria.com.br](http://www.devfuria.com.br/) é Jekyll, o meu [blog pessoal](https://flaviomicheletti.github.io/)
-é feito com Jekyll. Eu seria o cara mais suspeito para falar mal de Jekyll, mas eu encontrei uma limitação e venho 
+O meu site [www.devfuria.com.br](http://www.devfuria.com.br/) é Jekyll, o meu [portifólio](https://flaviomicheletti.github.io/)
+é feito com Jekyll. Eu seria o cara mais suspeito para falar mal de Jekyll, mas eu encontrei uma limitação e venho
 compartilhar ela com você.
 
 O problema está no workflow de trabalho ao criar uma página, uma única pagina. Não há uma forma de gerar uma pequena parte
 de seu site, imagine que você queira gerar uma pasta ou um único arquivo (um .md por exemplo) não dá.
 
-E porque eu quero gerar uma única página? Aí está o foco do problema, agora terei que explicar melhor sobre o que eu 
+E porque eu quero gerar uma única página? Aí está o foco do problema, agora terei que explicar melhor sobre o que eu
 quero dizer quanto a "workflow de trabalho", então vamos imaginar um cenário...
 
-Você começa um site pequeno (umas 5 páginas) com Jekyll. O comando `jekyll server -w` gerar todo o seu site e fica 
-"escutando" para gerar a cada alteração que você fizer. A cada pequena alteração ele gera todo o seu site, ele faz isso 
-de forma incrivelmente rápida. O esperado acontece, conforme seu site cresce o Jekyll levará mais tempo para gerar 
+Você começa um site pequeno (umas 5 páginas) com Jekyll. O comando `jekyll server -w` gerar todo o seu site e fica
+"escutando" para gerar a cada alteração que você fizer. A cada pequena alteração ele gera todo o seu site, ele faz isso
+de forma incrivelmente rápida. O esperado acontece, conforme seu site cresce o Jekyll levará mais tempo para gerar
 todo o site. Natural que seja assim, e confesso que nem é muito tempo, repito o Jekyll é rápido. Isso porque eu nem
 instalei o [suporte a LCI](http://octopress.nayaklabs.com/blog/2014/08/07/for-10x-faster-lsi-support/).
 
@@ -42,25 +42,25 @@ tenho os conteúdos bem definidos e separados por pastas, então posso fazer:
 
 O Jekyll irá gerar só a `pasta4`, isso ameniza. Engraçado que eu queria fazer exatamente o inverso, dizer "ei Jekyll seja
 bonzinho comigo e inclua apenas esse ou aquele arquivo", pronto! Estaria tudo resolvido, mas os caras que mantém o Jekyll
-são turrões. Nos logs do GitHub, desde 2011, há discussões calorosas à respeito. Logo, mudar a cultura de desenvolvimento 
+são turrões. Nos logs do GitHub, desde 2011, há discussões calorosas à respeito. Logo, mudar a cultura de desenvolvimento
 do Jekyll está descartada. Veja nessa [issue](https://github.com/jekyll/jekyll-help/issues/123) como os caras são taxativos.
 
 Há uma [discussão](https://github.com/jekyll/jekyll/issues/380), a respeito da geração incremental ou geração baseado em
-diferenças. São duas opções que podem resolver o problema. Por outro lado, a solução poderia ser tão simples! O exemplo 
-que mencionei no parágrafo anterior resolveria. Não precisa implementar geração incremental ou por diferenças, mas se vierem... 
+diferenças. São duas opções que podem resolver o problema. Por outro lado, a solução poderia ser tão simples! O exemplo
+que mencionei no parágrafo anterior resolveria. Não precisa implementar geração incremental ou por diferenças, mas se vierem...
 que sejam bem vindas!
 
-Cogitei mudar para [Pelican](http://blog.getpelican.com/). O Pelican gera aquilo que você quer que ele gere, foi a 
+Cogitei mudar para [Pelican](http://blog.getpelican.com/). O Pelican gera aquilo que você quer que ele gere, foi a
 primeira coisa que testei. Você pode ter 1000 páginas (esse foi meu teste) e ele gera apenas a que você pedir. Obviamente
 que ao entrar em "watch" ele será extremamente eficaz, pois terá que gerar apenas uma única página. Mas desisti do Pelican
 também, depois eu conto as razões em outro post.
 
 Cogitei mudar para o [DocPad](http://docpad.org/), cara que encrenca! Tem um [problema](https://github.com/docpad/docpad/issues/885)
 para ser resolvido até hoje, ele entra em um loop infinito. Não cheguei a fazer o teste das 1000 páginas, vou esperar a
-issue ser fechada... eles devem estar esperando eu pagar para ter o suporte, justo! 
+issue ser fechada... eles devem estar esperando eu pagar para ter o suporte, justo!
 
 Experimentei outros [geradores estáticos](https://github.com/pinceladasdaweb/Static-Site-Generators), existem uma centenas
-deles. Mas em certo ponto parei, pois estava perdendo um longo e precioso tempo no meio de tanta documentação, incrível 
+deles. Mas em certo ponto parei, pois estava perdendo um longo e precioso tempo no meio de tanta documentação, incrível
 como os caras perdem o foco na hora de escrever manuais.
 
 Talvez exista um plugin, ou alguma solução (solução != gambiarra) que eu desconheça. Se você conhece, me avise por favor!
